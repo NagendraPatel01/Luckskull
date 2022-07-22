@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateidOneActivity"
+    android:orientation="vertical"
+    android:background="#EAA135">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:padding="3dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/bacbtn"
+            android:src="@drawable/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            ></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="Create ID"
+            android:textColor="#fff"
+            android:textSize="23dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@drawable/linearbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+        <ImageView
+            android:id="@+id/circleimg"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:layout_width="100dp"
+            android:layout_height="60dp">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_marginTop="10dp"
+            android:text="Go Exchange 9"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text2"
+            android:text="Go Exchange 9"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#2E2929"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:text="ID Details"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                   android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <View
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="60dp"
+                    android:background="#FFC107"
+                    android:layout_height="1dp">
+
+                </View>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Min Refill"
+                        android:textColor="#fff"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="13dp"
+                        android:text="1,000"
+                        android:textColor="#9C9797"
+                        android:textSize="12dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Min Withdrawal"
+                        android:textColor="#fff"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="13dp"
+                        android:text="1,000"
+                        android:textColor="#9C9797"
+                        android:textSize="12dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Min Maintaining Bal"
+                        android:textColor="#fff"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="13dp"
+                        android:text="0"
+                        android:textColor="#9C9797"
+                        android:textSize="12dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Max Withdrawal"
+                        android:textColor="#fff"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="13dp"
+                        android:text="Unlimited"
+                        android:textColor="#9C9797"
+                        android:textSize="12dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:text="Username*"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="#2E2929">
+
+            <EditText
+                android:id="@+id/edit"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:hint="Username"
+                android:textColorHint="#A39D9D"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </EditText>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:text="Deposit Coins *"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="#2E2929">
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/edit1"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:hint="enter coin"
+                android:textColorHint="#A39D9D"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </EditText>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            app:cardBackgroundColor="#FFC107"
+            app:cardCornerRadius="7dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Continue to pay"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Update Default Payment Method"
+                android:textColor="#fff"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

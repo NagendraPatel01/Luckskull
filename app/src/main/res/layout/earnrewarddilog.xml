@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="20dp"
+    android:background="@drawable/dilogbg">
+
+    <LinearLayout
+        android:background="#2B2323"
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="#2B2323"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:padding="6dp"
+                android:background="@drawable/alartshap"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/closebtn"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+
+            </ImageView>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="#2B2323"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           android:gravity="center">
+
+            <ImageView
+                android:src="@drawable/walletbalance"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#FFC107"
+                android:text="Rewards Earned">
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

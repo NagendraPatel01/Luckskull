@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentMethodActivity"
+    android:background="#EAA135">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:padding="3dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/bacbtn"
+            android:src="@drawable/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            ></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="Payment Method"
+            android:textColor="#fff"
+            android:textSize="23dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textamount"
+            android:layout_marginTop="20dp"
+            android:text="1000/-"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pay Manually"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:gravity="center"
+                        android:background="@drawable/textshap"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="instant"
+                        android:textColor="#FFC107"
+                        android:textSize="15dp">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#FFC107"
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"></View>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="#292424"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                       <!-- <LinearLayout
+                            android:id="@+id/linear"
+                            android:gravity="center"
+                            android:background="@drawable/textshap"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:background="@drawable/bacbtn"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/paytmupi">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:textSize="10dp"
+                                android:textColor="#fff"
+                                android:text="Bank Transfer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>-->
+
+                        <LinearLayout
+                            android:id="@+id/linear1"
+                            android:gravity="center"
+                            android:background="@drawable/textshap"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/goophone">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:textSize="10dp"
+                                android:textColor="#fff"
+                                android:text="UPI"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+             <!--   <LinearLayout
+                    android:id="@+id/linear2"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginHorizontal="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="#221E1E"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bank Nmae"
+                                    android:textColor="#fff"
+                                    android:textSize="10dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="20dp"
+                                    android:text="State Bank"
+                                    android:textColor="#fff"
+                                    android:textSize="10dp">
+
+                                </TextView>
+
+                                <ImageView
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/copy"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp">
+
+                                </ImageView>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Account number"
+                                    android:textColor="#fff"
+                                    android:textSize="10dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="20dp"
+                                    android:text="7635368563856348675"
+                                    android:textColor="#fff"
+                                    android:textSize="10dp">
+
+                                </TextView>
+
+                                <ImageView
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/copy"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp">
+
+                                </ImageView>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="IFSC Code"
+                                    android:textColor="#fff"
+                                    android:textSize="10dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="20dp"
+                                    android:text="UTIB0004522"
+                                    android:textColor="#fff"
+                                    android:textSize="10dp">
+
+                                </TextView>
+
+                                <ImageView
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/copy"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp">
+
+                                </ImageView>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Account holder name"
+                                    android:textColor="#fff"
+                                    android:textSize="10dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="20dp"
+                                    android:text="Unnt 19"
+                                    android:textColor="#fff"
+                                    android:textSize="10dp">
+
+                                </TextView>
+
+                                <ImageView
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/copy"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp">
+
+                                </ImageView>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginHorizontal="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="#221E1E"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp">
+
+                        <LinearLayout
+                            android:id="@+id/linear4"
+                            android:background="@drawable/textshap"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_margin="5dp"
+                                android:scaleType="centerCrop"
+                                android:id="@+id/img3"
+                                android:src="@drawable/add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Click here to upload paymen screenshot"
+                                android:textColor="#fff"
+                                android:textSize="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>-->
+
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginHorizontal="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="#221E1E"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mode"
+                                        android:textColor="#fff"
+                                        android:textSize="12dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Dosplay name"
+                                        android:textColor="#fff"
+                                        android:textSize="12dp">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="UPI Details"
+                                    android:textColor="#fff"
+                                    android:textSize="12dp">
+
+                                </TextView>
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_marginTop="2dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#fff"
+                                android:layout_marginHorizontal="10dp">
+
+                            </View>
+
+                            <RelativeLayout
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <ImageView
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:background="@drawable/bacbtn"
+                                        android:src="@drawable/paytmupi">
+
+                                    </ImageView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="35dp"
+                                        android:text="Bank Nmae"
+                                        android:textColor="#fff"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_marginTop="2dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="20dp"
+                                        android:text="State Bank"
+                                        android:textColor="#fff"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                    <ImageView
+                                        android:src="@drawable/copy"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"/>
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <ImageView
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:background="@drawable/bacbtn"
+                                        android:src="@drawable/paytmupi">
+
+                                    </ImageView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="35dp"
+                                        android:text="nagendra patel"
+                                        android:textColor="#fff"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_marginTop="2dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="20dp"
+                                        android:text="State Bank"
+                                        android:textColor="#fff"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                    <ImageView
+                                        android:src="@drawable/copy"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"/>
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <ImageView
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:background="@drawable/bacbtn"
+                                        android:src="@drawable/paytmupi">
+
+                                    </ImageView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="35dp"
+                                        android:text="PUNT PUNT"
+                                        android:textColor="#fff"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_marginTop="2dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="20dp"
+                                        android:text="State Bank"
+                                        android:textColor="#fff"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                    <ImageView
+                                        android:src="@drawable/copy"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"/>
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginHorizontal="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="#221E1E"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp">
+
+                        <LinearLayout
+                            android:id="@+id/linear6"
+                            android:background="@drawable/textshap"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_margin="5dp"
+                                android:scaleType="centerCrop"
+                                android:id="@+id/img4"
+                                android:src="@drawable/add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Click here to upload paymen screenshot"
+                                android:textColor="#fff"
+                                android:textSize="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+               <!-- <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/linear7"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:text="Added Screenshot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="5dp"
+                        app:cardBackgroundColor="#373535"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:src="@drawable/add">
+
+                            </de.hdodenhof.circleimageview.CircleImageView>
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:layout_gravity="center"
+                                android:textSize="13dp"
+                                android:textColor="#fff"
+                                android:textStyle="bold"
+                                android:text="UPI"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <RelativeLayout
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:textSize="13dp"
+                                    android:textColor="#E91E63"
+                                    android:textStyle="bold"
+                                    android:text="Remove"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>-->
+
+<LinearLayout
+    android:id="@+id/linear5"
+    android:visibility="gone"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <!-- <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="25dp"
+        app:cardCornerRadius="7dp"
+        app:cardBackgroundColor="#FFC107">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Add\n Another"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="25dp"
+        app:cardCornerRadius="7dp"
+        app:cardBackgroundColor="#FFC107">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:indeterminateTint="#FFC107"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+
+</RelativeLayout>

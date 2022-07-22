@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Profile"
+        android:icon="@drawable/home"
+        android:id="@+id/profile"></item>
+
+    <item android:title="Withdrawel Details"
+        android:icon="@drawable/passbook"
+        android:id="@+id/withdrow"></item>
+
+
+    <item android:title="Create ID"
+        android:icon="@drawable/ids"
+        android:id="@+id/createid"></item>
+
+
+    <item android:title="Refer Earn"
+        android:icon="@drawable/offer"
+        android:id="@+id/refer"></item>
+
+    <item android:title="Terms"
+        android:icon="@drawable/offer"
+        android:id="@+id/term"></item>
+
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+
+            android:title="">
+
+            <menu>
+                <item
+                    android:id="@+id/notification"
+                    android:icon="@drawable/passbook"
+                    android:title="Notifications" />
+
+                <item
+                    android:id="@+id/help"
+                    android:icon="@drawable/offer"
+                    android:title="Help" />
+
+                <item
+                    android:id="@+id/howtouse"
+                    android:icon="@drawable/offer"
+                    android:title="How to use" />
+
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/offer"
+                    android:title="LogOut" />
+
+            </menu>
+        </item>
+    </group>
+</menu>

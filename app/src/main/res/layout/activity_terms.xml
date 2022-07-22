@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermsActivity"
+    android:orientation="vertical"
+    android:background="#EAA135">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:padding="3dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/bacbtn"
+            android:src="@drawable/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            ></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="Terms &amp; Conditions"
+            android:textColor="#fff"
+            android:textSize="23dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@drawable/linearbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Terms &amp; Conditions"
+                android:textColor="#fff"
+                android:textSize="23dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:justificationMode="inter_word"
+                android:text="Terms and Conditions agreements act as a legal contract between GoPunt and the user who access your website and mobile app.\n\n
+
+You agree that by accessing the App, you have read, understood, and agree to be bound by all of these Terms and Conditions. If you do not agree with all of these Terms and Conditions, then you are expressly prohibited from using the App.\n\n
+
+You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Terms and Conditions by your continued use of the Site after the date such revised Terms and Conditions are posted.\n\n
+
+GoPunt is intended for users who are at least 18 years old. Person under the age of 18 is not permitted to register for the App.\n\n
+All the registration information you submit will be true, accurate, current, and complete.\n
+You will not use the Site for any illegal or unauthorized purpose.\n
+Your use of the Site will not violate any applicable law or regulation.\n\n
+If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Site (or any portion thereof).">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

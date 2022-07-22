@@ -1,0 +1,25 @@
+package com.example.luckskullnew.fragment;
+
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.example.luckskullnew.R;
+
+
+public class PassbookFragment extends Fragment {
+
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view= inflater.inflate(R.layout.fragment_passbook, container, false);
+        return view;
+    }
+}
